@@ -68,15 +68,12 @@
             aria-label="Toggle navigation" onclick="show1()">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> -->
-          </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 fw-light">
               <div class="d-grid grid w-75 justify-content-end gap-4">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./about.html">About</a>
@@ -113,32 +110,35 @@
             </div>
           </ul>
         </div>
-        <nav class="toogle w-100" id="ink">
-          <div class="container-fluid bc container-fluidw start-0">
-            <div class="toggle-navbar league-spartan-spartan">
-              <ul class="list-group menu-mobile list-style-none bc gap-4 pt-4">
-                <li class="nav-item border-bottom">
-                  <a class="nav-link text-dark b" aria-current="page" href="/">Home</a>
-                </li>
-                <li class="nav-item border-bottom">
-                  <a class="nav-link text-dark" href="/about.html">About</a>
-                </li>
-                <li class="nav-item border-bottom">
-                  <a class="nav-link text-dark" href="./services.html" id="navbarDropdown">
-                    Servicesw
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark" href="/contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
       </nav>
-      <div class="d-flex justify-content-center " style="height: 500px;">
+      <nav class="toogle w-100" id="ink">
+        <div class="container-fluid bc container-fluidw start-0">
+          <div class="toggle-navbar league-spartan-spartan">
+            <ul class="list-group menu-mobile  list-style-none bc gap-4 p-4">
+              <li class="nav-item border-bottom">
+                <a class="nav-link "  href="./index.html">Home</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./about.html">About</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./services.html">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./properties.html">Properties</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center top-25 " style="height: 500px;">
 <!-- <div class="w-100 w-md-75 w-md-50 "> -->
-      <div class="w-sm-100 w-md-75 position-relative top-45 top-lg-25">
+      <div class="w-sm-100 w-md-75 position-relative ">
         <div class="heading-contact-us mt-5">
           <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-light">
             Properties
@@ -483,29 +483,31 @@
       const currentPath = window.location.pathname;
       switch (currentPath) {
         case "/index.html":
-          document
-            .querySelector('.nav-link[href="./index.html"]')
-            .classList.add("active");
+       document.querySelectorAll('.nav-link[href="./index.html"]')
+            .forEach(link => link.classList.add("active"));
+           
           break;
         case "/about.html":
-          document
-            .querySelector('.nav-link[href="./about.html"]')
-            .classList.add("active");
+          document.querySelectorAll('.nav-link[href="./about.html"]')
+            .forEach(link => link.classList.add("active"));
+           
           break;
         case "/properties.html":
-          document
-            .querySelector('.nav-link[href="./properties.html"]')
-            .classList.add("active");
+        
+          
+          document.querySelectorAll('.nav-link[href="./properties.html"]')
+            .forEach(link => link.classList.add("active"));
+           
           break;
         case "/services.html":
-          document
-            .querySelector('.nav-link[href="./services.html"]')
-            .classList.add("active");
+          document.querySelectorAll('.nav-link[href="./services.html"]')
+            .forEach(link => link.classList.add("active"));
+           
           break;
         case "/contact.html":
-          document
-            .querySelector('.nav-link[href="./contact.html"]')
-            .classList.add("active");
+          document.querySelectorAll('.nav-link[href="./contact.html"]')
+            .forEach(link => link.classList.add("active"));
+           
           break;
         default:
           break;

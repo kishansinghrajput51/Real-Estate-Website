@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/styles/style.css" />
   <!-- Bootstrap CDN for styles -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -217,41 +217,45 @@
       <nav class="toogle w-100" id="ink">
         <div class="container-fluid bc container-fluidw start-0">
           <div class="toggle-navbar league-spartan-spartan">
-            <ul class="list-group menu-mobile list-style-none bc gap-4 pt-4">
+             <ul class="list-group menu-mobile  list-style-none bc gap-4 p-4">
               <li class="nav-item border-bottom">
-                <a class="nav-link text-dark b" aria-current="page" href="/">Home</a>
+                <a class="nav-link "  href="./index.html">Home</a>
               </li>
               <li class="nav-item border-bottom">
-                <a class="nav-link text-dark" href="/about.html">About</a>
+                <a class="nav-link " href="./about.html">About</a>
               </li>
               <li class="nav-item border-bottom">
-                <a class="nav-link text-dark" href="./services.html" id="navbarDropdown">
+                <a class="nav-link " href="./services.html">
                   Services
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="/contact.html">Contact</a>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./properties.html">Properties</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link " href="./contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="d-flex justify-content-center" >
+      <div class="d-flex justify-content-center top-25">
         <!-- <div class="w-100 "> -->
-          <div class="w-sm-100 w-md-75 position-relative top-45 top-lg-25">
-            <div class="heading-contact-us mt-5">
-              <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-light">
-                Properties
-              </h4>
+        <div class="w-sm-100 w-md-75 position-relative">
+          <div class="heading-contact-us mt-5">
+            <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-light">
+              Services
+            </h4>
+          </div>
+          <div class="px-5">
+            <div class="paragraph  ps-2 text-center">
+              <h1 class="heading-2 display-3 text-white text-center ms-1 ps-1 fw-lighter">
+                We offer a wide Range of Services
+
+              </h1>
             </div>
-            <div class="px-5">
-              <div class="paragraph  ps-2 text-center">
-                <h1 class="heading-2 display-3 text-white text-center ms-1 ps-1 fw-lighter">
-                  Looking to Buy, Sell, Rent, Invest or Manage?
-                </h1>
-              </div>
-            </div>
-            <!-- <div class="d-flex justify-content-center">
+          </div>
+          <!-- <div class="d-flex justify-content-center">
             <div class="child-start-search">
               <div class="button1 btnco rounded-5 py-3 px-4 text-center mx-auto start-search">
                 <a href="#" class="text-decoration-none w-100 "><span class="text-white"> START SEARCHING</span></a>
@@ -548,34 +552,35 @@
     // get the location pathname
     const currentPath = window.location.pathname;
     switch (currentPath) {
-      case "/index.html":
-        document
-          .querySelector('.nav-link[href="./index.html"]')
-          .classList.add("active");
-        break;
-      case "/about.html":
-        document
-          .querySelector('.nav-link[href="./about.html"]')
-          .classList.add("active");
-        break;
-      case "/properties.html":
-        document
-          .querySelector('.nav-link[href="./properties.html"]')
-          .classList.add("active");
-        break;
-      case "/services.html":
-        document
-          .querySelector('.nav-link[href="./services.html"]')
-          .classList.add("active");
-        break;
-      case "/contact.html":
-        document
-          .querySelector('.nav-link[href="./contact.html"]')
-          .classList.add("active");
-        break;
-      default:
-        break;
-    }
+        case "/index.html":
+       document.querySelectorAll('.nav-link[href="./index.html"]')
+            .forEach(link => link.classList.add("active"));
+          break;
+        case "/about.html":
+          document.querySelectorAll('.nav-link[href="./about.html"]')
+            .forEach(link => link.classList.add("active"));
+           
+          break;
+        case "/properties.html":
+        
+          
+          document.querySelectorAll('.nav-link[href="./properties.html"]')
+            .forEach(link => link.classList.add("active"));
+           
+          break;
+        case "/services.html":
+          document.querySelectorAll('.nav-link[href="./services.html"]')
+            .forEach(link => link.classList.add("active"));
+           
+          break;
+        case "/contact.html":
+          document.querySelectorAll('.nav-link[href="./contact.html"]')
+            .forEach(link => link.classList.add("active"));
+           
+          break;
+        default:
+          break;
+      }
   </script>
   <script src="./assets/script.js">
     let i = document.getElementById("navbarSupportedContent");

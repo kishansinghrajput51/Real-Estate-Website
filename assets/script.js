@@ -1,5 +1,5 @@
 showSearchInputBox = (searchElement) => {
-    console.log("Called yeah.");
+    // console.log("Called yeah.");
     
         let inputBox = document.getElementById(searchElement);
         let searchIcon = document.querySelector("#nav-search-icon");
@@ -30,3 +30,12 @@ showSearchInputBox = (searchElement) => {
           j.classList.toggle("show");
         }
       }
+
+       const mobileMenu = document.getElementById("ink");
+       
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 991) {
+          mobileMenu?.classList.add("toogle");
+          mobileMenu?.classList.remove("show");
+        }
+      });

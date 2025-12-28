@@ -184,6 +184,9 @@ z-index: 2;} home ke jagah alag page ke liye other classes name hai. iski wajah 
 .navbar-nav .nav-item .nav-link.active {
   color: #34a0a4 !important;
 }
+.menu-mobile .nav-item .nav-link.active {
+  color: #34a0a4 !important;
+}
 .navbar-toggler {
   background-color: var(--bg-co);
 }
@@ -298,7 +301,7 @@ z-index: 2;} home ke jagah alag page ke liye other classes name hai. iski wajah 
   position: absolute;
   height: calc(var(--head-width) - 154px);
   background-size: cover;
-  background-image: url(../images/services-bg.jpg);
+  background-image: url(../images/about-bg.jpg);
   background-position: 0% 8%;
   background-repeat: no-repeat;
   z-index: 0;
