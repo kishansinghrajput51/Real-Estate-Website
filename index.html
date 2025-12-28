@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Find your dream home with our expert real estate services. Browse premium properties, apartments, and houses for sale or rent." />
+  <meta name="keywords" content="real estate, properties, homes for sale, apartments, houses, property rental">
+  <meta name="author" content="Kishan Rajput">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#34a0a4">
+
+  <!-- Open Graph for social media -->
+  <meta property="og:title" content="Real Estate - Find Your Dream Home">
+  <meta property="og:description" content="Discover premium properties with our expert real estate services">
+  <meta property="og:image" content="./assets/images/hero-bg.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Performance -->
+  <link rel="preload" href="./assets/styles/style.css" as="style">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+
+  <!-- Bootstrap CDN for styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN for dropdowns, toggle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- Font Family - Google Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .formbold-form-input {
+      width: 100%;
+      padding-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid #6a64f1;
+      background: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      color: #07074d;
+      outline: none;
+      resize: none;
+    }
+
+    .formbold-form-input::placeholder {
+      color: #536387;
+    }
+
+    .footer-1 {
+      height: 350px;
+    }
+
+    .toogle {
+      display: none;
+    }
+
+    .footer-2 {
+      height: 120px;
+    }
+
+    @media (max-width: 390px) {
+      .footer-2 {
+        height: 180px !important;
+      }
+    }
+
+    .shower {
+      display: none !important;
+    }
+
+    .list-style-none {
+      list-style: none;
+    }
+
+    @media (min-width: 992px) {
+      .logos {
+        display: none;
+      }
+    }
+
+    
+
+   
+  </style>
+  <title>Real Estate - Find Your Dream Home | Properties for Sale & Rent</title>
+</head>
+
+<body class="league-spartan-spartan">
+  <!-- First part -->
+  <div class="head league-spartan-spartan p-lg-5 p-3">
+    <header class="home  transparent position-relative">
+      <nav class="navbar navbar-expand-lg b-body-tertiary py-4 fs-5 ">
+        <div class="container-fluid space-around d-flex align-items-center">
+          <a class="navbar-brand" href="#"><img src="./assets/images/site-logo.svg" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="show1()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> -->
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 fw-light">
+              <div class="d-grid grid w-75 justify-content-end gap-4">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./properties.html">
+                    Properties
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./services.html">Services</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <ul class="list-group logos">
+            <div class="d-flex justify-content-between gap-4">
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <input class="form-control me-2 position-relative hide-input" id="nav-in" type="search" placeholder="Search"
+                  aria-label="Search" />
+                <button class="bt border-0 bg-transparent" onclick="showSearchInputBox('nav-in')">
+                <span><i class="fa fa-search " id="nav-search-icon"></i></span>
+                </button>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <nav class="toogle w-100" id="ink">
+        <div class="container-fluid bc container-fluidw start-0">
+          <div class="toggle-navbar league-spartan-spartan">
+            <ul class="list-group menu-mobile list-style-none bc gap-4 pt-4">
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark b" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark" href="/about.html">About</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark" href="/services.html" id="navbarDropdown">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center">
+<div class="w-100 w-md-75 w-md-50 ">
+      <div class="   position-relative top-25">
+        <div class="heading-contact-us mt-5">
+          <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-semibold">
+            Discover Your Dream Home With Us
+          </h4>
+        </div>
+        <div class="px-5">
+          <div class="paragraph ms- w-100 ps-2 text-center">
+            <h1 class="heading-2 display-3 text-white text-center ms-1 ps-1 fw-semibold">
+              Find the Perfect Property for Your Lifestyle
+            </h1>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="child-start-search">
+            <div class="button1 btnco rounded-5 py-3 px-4 text-center mx-auto start-search">
+              <a href="#" class="text-decoration-none w-100 "><span class="text-white fw-lighter"> START SEARCHING</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </header>
+  </div>
+  <!--    Second part -->
+  <div class="subcontainer h-100 p-lg-5 p-3 ">
+    <div class="content bg-white h-100 py-3 py-lg-5 px-3 w-100 rounded-3">
+      <h1 class="heading-3 text-center">What We Do</h1>
+      <p class=" text-center opacity-75 fw-lighter fs-5">
+        Simplifying the journey of buying, selling, and renting properties.
+        Our expert team provides comprehensive real estate solutions tailored
+        to your needs
+      </p>
+
+      <div class="text-center">
+        <div class="hr d-inline-block"></div>
+      </div>
+<div class="contaienr py-3 py-lg-5">
+      <div class="row py-4">
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column c">
+          <h6 class="heading-4 price">01</h6>
+          <h4 class="heading-5 fs-2  fw-lighter">Property Sales</h4>
+          <p class="fw-medium fs-6 opacity-75" >
+            Find your dream home with Real Estate - our expert team will guide
+            you through the process and ensure a smooth transaction.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column c">
+          <h6 class="heading-4 price">02</h6>
+          <h4 class="heading-5 fs-2  fw-lighter">Property Management</h4>
+          <p class="fw-medium fs-6 opacity-75" >
+            Find your dream rental property with Real Estate, offering a
+            variety of options to suit your needs and preferences.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column c">
+          <h6 class="heading-4 price">03</h6>
+          <h4 class="heading-5 fs-2  fw-lighter">Property Management</h4>
+          <p class="fw-medium fs-6 opacity-75" >
+            Trust Real Estate to handle the day-to-day management of your
+            property, maximizing its value and minimizing your stress.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column c">
+          <h6 class="heading-4 price">04</h6>
+          <h4 class="heading-5 fs-2  fw-lighter">Lucrative Investments</h4>
+          <p class="fw-medium fs-6 opacity-75" >
+            Real Estate presents lucrative investment opportunities in the
+            real estate market, providing high returns on investments.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!--    Third part -->
+
+  <div class="pt-3 pt-lg-5 px-3">
+    <div class="d-flex flex-column py-3 py-lg-5 px-3">
+      <h1 class="text-center pb-2">Featured Properties</h1>
+
+      <p class="text-center fw-lighter opacity-75">
+        Discover our hand-picked selection of top-notch properties with
+        outstanding features, guaranteed to meet your real estate needs and
+        exceed your expectations.
+      </p>
+<div class="text-center">
+        <div class="hr d-inline-block"></div>
+      </div> 
+      <div class="midle-line  border-2 ">
+      </div>
+
+      <div class="three-photos py-4 second-content">
+        <div class="bc  ">
+          <div class="text-center">
+            <img src="./assets/images/feature-04.jpg" class="img-fluid pb-3 w-100 rounded-3 img-scale" alt="" />
+          </div>
+          <div class="px-3 py-5">
+            <h6 class="">APARTMENT . QUEENS</h6>
+            <h5 class="">Modern Stylish Apartment</h5>
+            <p class="">
+              Discover the epitome of contemporary living in our sleek and chic
+              modern stylish apartments.
+            </p>
+            <p class="price">90,000</p>
+          </div>
+        </div>
+
+        <div class="bc">
+          <div class="text-center">
+            <img src="./assets/images/feature-02.jpg" class="img-fluid pb-3 w-100 rounded-3 img-scale" alt="" />
+          </div>
+
+          <div class="px-3 py-5">
+            <h6 class="">APARTMENT - QUEENS</h6>
+            <h5 class="">Contemporary Apartments</h5>
+            <p class="">
+              Experience the perfect blend of sophistication and urban living in
+              our cutting-edge contemporary apartments.
+            </p>
+            <p class="price">110,000</p>
+          </div>
+        </div>
+        <div class="bc">
+          <div class="text-center">
+            <img src="./assets/images/feature-01.jpg" class="img-fluid pb-3 w-100 rounded-3 img-scale" alt="" />
+          </div>
+          <div class="px-3 py-5">
+            <h6 class="">APARTMENT . QUEENS</h6>
+            <h5 class="">Suburban Single-Family Homes</h5>
+            <p class="">
+              Embrace the idyllic charm and tranquility of suburban living in
+              our spacious and welcoming single-family homes.
+            </p>
+            <p class="price">150,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    Fourth part -->
+    <div class="bc h-100 ">
+      <div class="bc bg-white rounded-3 bc h-100 p-lg-5 p-3">
+        <div class="third-part-child d-flex flex-column">
+          <div class="">
+            <div class="display-1">
+              <span class="" >
+                <svg style=" height: 0.9em" aria-hidden="true" class=" "  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path class=""  fill="#34a0a4" d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"></path></svg>
+              </span>
+              <h2 class="mt-0 pt-0 display-4 fw-bolder">
+                
+                Read from clients who have found the perfect place where they
+                can create...
+              </h2>
+            </div>
+
+             <div class="text-center">
+        <div class="hr d-inline-block"></div>
+      </div>
+
+            <p class="fw-lighter fs-5 py-2 opacity-75">
+              Discover testimonials from satisfied clients who have found their
+              dream properties with Real Estate, the trusted experts in helping
+              you find the perfect place to call home.
+            </p>
+            <div class=" ">
+              <a href="#" class="mx-2 button1 btnco  py-3 px-5 text-center my-2 rounded-pill text-decoration-none"><span class="text-white">More Testimonials</span></a>
+            </div>
+          </div>
+          <div class="py-2 d-flex flex-column">
+            <div class="sub-container-1 rounded-3 mx-3 my-4 px-1 border translate-effect h-50">
+              <div class="rating ms-3 my-3">⭐⭐⭐⭐</div>
+              <div class="fw-lighter fs-5 py-2 mx-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                id convallis neque. Nam scelerisque placerat orci. Maecenas at
+                pulvinar dui. In fermentum, lectus sed tincidunt ornare, arcu ex
+                convallis sapien, quis vestibulum libero tellus quis nisl.”
+              </div>
+              <div class="mx-3 price my-2 fw-light">Jack Crawly</div>
+            </div>
+
+            <div class="sub-container-1 rounded-3 mx-3 my-4 px-1 border translate-effect  h-50">
+              <div class="rating ms-3 my-3">⭐⭐⭐⭐</div>
+              <div class="fw-lighter fs-5 py-2 mx-3">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                id convallis neque. Nam scelerisque placerat orci. Maecenas at
+                pulvinar dui. In fermentum, lectus sed tincidunt ornare, arcu ex
+                convallis sapien, quis vestibulum libero tellus quis nisl.”
+              </div>
+              <div class="mx-4 price my-2 fw-light">James Oliver</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fifth part  -->
+    <div class="p-lg-5 p-3">
+      <div class="p-lg-5 p-3 bg-light border rounded-3">
+        <div class="d-flex img-res gap-4">
+          <div class="text-center one-child">
+            <img src="./assets/images/connecting-with-customers.jpg" class="rounded con-with-customer" alt="..."
+              class="img-fluid" />
+          </div>
+          <div class="second-child">
+            <h2 class="container4-heading-1 display-3  fw-lighter">
+              Connecting people with perfect homes is our passion.
+            </h2>
+            <div class="text-center">
+        <div class="hr d-inline-block"></div>
+      </div>
+
+            <div class="lead fw-lighter opacity-75 py-2">
+              With a genuine passion for helping people find their dream homes,
+              we are dedicated to connecting buyers and sellers in the real
+              estate market. Trust us to make your home buying or selling
+              experience seamless and satisfying.
+            </div>
+            <div class="btn ">
+              <div class="button1 btnco py-2 px-5 my-2 rounded-pill">
+                <a href="#" class="text-decoration-none "><span class="text-white">Read More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sixth Part -->
+     
+  <div class="container-fluid w-100">
+      <div class=" position-relative w-100">
+        <div class="text-center form-above-img rounded-3 img-fluid map py-md-4">
+          <div class="container w-lg-50 w-md-75 w-sm-100 h-100 py-5 rounded-3 bg-white ">
+            <div class="fs-5 fw-light">Contact Us</div>
+            <p class="fs-3 fw-lighter">Schedule an Appointment</p>
+            <div class="">
+        <div class="hr d-inline-block"></div>
+      </div>
+            <div class=" ">
+              <!-- <div class="col-md-8 col-lg-6"> -->
+                <form action="#" method="POST" class="p-4 rounded-3 ">
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="firstname" class="form-label">First Name</label>
+                    </div>
+                    <input type="text" name="firstname" id="firstname" class="y formbold-form-input"
+                      placeholder="Jane" />
+                  </div>
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="email" class="form-label">Email</label>
+                    </div>
+                    <input type="email" name="lastname" id="lastname" class="y formbold-form-input"
+                      placeholder="example@gmail.com" />
+                  </div>
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="message" class="form-label">Message</label>
+                    </div>
+                    <textarea rows="6" name="message" id="message" class="y formbold-form-input"
+                      placeholder="Write your message..."></textarea>
+                  </div>
+                  <div class="w-50 mx-auto">
+                    <button type="submit" class="btn btnco button1 text-white rounded-pill w-100">
+                      Request a Call Back
+                    </button>
+                  </div>
+                </form>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container-fluid bc pt-5 pb-2 footer-1 ">
+    <div class="d-grider gap-2 gap-md-4 bc h-100 ">
+      <div class="ps-2">
+        <img src="./assets/images/footer-logo.svg " class="" />
+      </div>
+      <div class="">
+        <div class="fw-lighter foot-head">About Us</div>
+        <div class="fw-lighter foot-content h-75">
+          At Real Estate, we pride ourselves on being a trusted and reputable
+          name in the real estate industry with years of experience.
+        </div>
+      </div>
+
+      <div class="">
+        <div class="fw-lighter foot-head">Contact Us</div>
+
+        <div class="foo fw-lighter foot-content">
+          13,Fifthe Avenue,New York, NY 101660 contact@info.com 555-345-4599
+        </div>
+      </div>
+
+      <div class="pe-2">
+        <div class="d-flex flex-column h-100 justify-content-between">
+          <div>
+            <div class="fw-lighter foot-head">Property Search</div>
+            <div class="fw-lighter foot-content">
+              Lorem ipsum dolor sit amet, consectetur elit. Donec faucibus, quam
+              sed
+            </div>
+          </div>
+
+          <div class="form">
+            <form action="" class="form">
+              <input type="text" name="" id="footer-in" class="px-2 py-1" placeholder="Search Properties" />
+              <button class="btn  p-1 px-2 rounded-end-pill" onclick="void(0)" style="background-color: var(--bg-co);">
+                <span><i class="fa fa-search " id="footer-search-icon " aria-hidden="true"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="bc">
+    <hr class="m-0">
+  </div>
+  <div class="py-3 bc px-2 px-md-3 px-lg-4 footer-2">
+    <div class="d-copywright-content d-flex justify-content-between h-100  gap-3">
+      <div class="px-2 py-2 fw-light lead">
+        Real Estate Website @Copyright 2024
+      </div>
+      <div class=" px-2 py-2 ">
+        <ul class="list-group footer-social-links">
+            <div class="d-flex justify-content-between gap-4">
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <!-- <li class="icon-list-group-item">
+                <input class="form-control me-2 hide-input" id="footer-in" type="search" placeholder="Search"
+                  aria-label="Search" />
+                <button class="bt border-0 bg-transparent" onclick="showSearchInputBox('footer-in')"> 
+                <a><i class="fa fa-search " id="search-icon"></i>d</a>
+                 </button>
+              </li> -->
+            </div>
+          </ul>
+      </div>
+    </div>
+  </div>
+    <!-- <div class="bug "> -->
+
+    <!-- <div class="bug-1"> -
+      <div class="text-center  d-flex  justify-content-center align-items-center position-relative  "> 
+        <div class="colum-center d-flex justify-content-center">
+           <form
+            action="https://formbold.com/s/FORM_ID"
+            method="POST"
+            class=" form-container border  rounded bg-white"
+          >
+            <div class="mb-3">
+              <div class="label text-start">
+                <label for="firstname" class="form-label">First Name</label>
+              </div>
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="y formbold-form-input"
+                placeholder="Jane"
+              />
+            </div>
+            <div class="mb-3">
+              <div class="label text-start">
+                <label for="email" class="form-label">Email</label>
+              </div>
+              <input
+                type="email"
+                name="lastname"
+                id="lastname"
+                class="y formbold-form-input"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="mb-3">
+              <div class="label text-start">
+                <label for="message" class="form-label">Message</label>
+              </div>
+              <textarea
+                rows="6"
+                name="message"
+                id="message"
+                class="y formbold-form-input"
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+            <div class="w-50 mx-auto">
+              <button type="submit" class="btn btn-color rounded-pill w-75">
+                Send Message
+              </button>
+            </div>
+          </form> 
+      </div>
+       </div> 
+
+    </div> -->
+    <!-- <div class="container-fluid ">
+      <div class="row mx-3 map position-relative">
+        <div class="text-center form-above-img rounded-3 img-fluid col-12">
+          <div class="container h-75 py-5 rounded-3">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg-6">
+                <form action="https://formbold.com/s/FORM_ID" method="POST" class="p-4 border rounded-3 bg-white">
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="firstname" class="form-label">First Name</label>
+                    </div>
+                    <input type="text" name="firstname" id="firstname" class="y formbold-form-input"
+                      placeholder="Jane" />
+                  </div>
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="email" class="form-label">Email</label>
+                    </div>
+                    <input type="email" name="lastname" id="lastname" class="y formbold-form-input"
+                      placeholder="example@gmail.com" />
+                  </div>
+                  <div class="mb-3">
+                    <div class="label text-start">
+                      <label for="message" class="form-label">Message</label>
+                    </div>
+                    <textarea rows="6" name="message" id="message" class="y formbold-form-input"
+                      placeholder="Write your message..."></textarea>
+                  </div>
+                  <div class="w-50 mx-auto">
+                    <button type="submit" class="btn btnco button1  rounded-pill w-100">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-4">
+      <div class="footer">
+        <div class="d-grid grid w-100 h-auto justify-content-center gap-4">
+          <div class="">
+            <img src="./assets/images/footer-logo.svg " class="h-75 w-100" />
+          </div>
+          <div class="my-4 h-100">
+            <div class="fw-bold">About Us</div>
+            <div class="fw-lighter">
+              At Real Estate, we pride ourselves on being a trusted and
+              reputable name in the real estate industry with years of
+              experience.
+            </div>
+          </div>
+          <div class="my-4 h-100">
+            <div class="fw-bold">Contact Us</div>
+
+            <div class="foo fw-lighter">
+              13, Fifth Avenue, New York, NY 101660 contact@info.com
+              555-345-4599
+            </div>
+          </div>
+
+          <div class="my-4 h-100">
+            <div class="fw-bold">Property Search</div>
+            <div class="fw-lighter">
+              Search through our extensive database of premium properties including apartments, condos, and
+              single-family homes in prime locations.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-2 my-2 hh-100">
+      <div class="d-grider align-items-center h-100 grid gap-3">
+        <div class="mx-2 py-2 fw-light lead">
+          Real Estate Website @Copyright 2024
+        </div>
+        <div class="w-100 mx-2 py-2">
+          <ul class="list-group footer-social-links">
+            <div class="d-flex">
+              <li class="list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram "
+                    style="width: 8px; height: 8px;" aria-hidden="true"></i></a>
+              </li>
+              <li class="list-group-item">
+                <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <input class="form-control me-2 no-sh" id="in" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn" onclick="show1()">
+                <span><i class="fa fa-search"></i></span>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+    <!-- </div> -->
+    <script>
+      // get the location pathname
+      const currentPath = window.location.pathname;
+      switch (currentPath) {
+        case "/index.html":
+          document
+            .querySelector('.nav-link[href="./index.html"]')
+            .classList.add("active");
+          break;
+        case "/about.html":
+          document
+            .querySelector('.nav-link[href="./about.html"]')
+            .classList.add("active");
+          break;
+        case "/properties.html":
+          document
+            .querySelector('.nav-link[href="./properties.html"]')
+            .classList.add("active");
+          break;
+        case "/services.html":
+          document
+            .querySelector('.nav-link[href="./services.html"]')
+            .classList.add("active");
+          break;
+        case "/contact.html":
+          document
+            .querySelector('.nav-link[href="./contact.html"]')
+            .classList.add("active");
+          break;
+        default:
+          break;
+      }
+    </script>
+    <script>
+      let i = document.getElementById("navbarSupportedContent");
+      let j = document.getElementById("ink");
+
+      function show1(e) {
+        if (j.classList.contains("show") && !j.classList.contains("toogle")) {
+          j.classList.add("toogle");
+          j.classList.remove("show");
+        } else {
+          i.classList.remove("show");
+          i.classList.remove("collapsing");
+          i.classList.add("shower");
+          j.classList.remove("toogle");
+          j.classList.toggle("show");
+        }
+      }
+
+      showSearchInputBox = (searchElement) => {
+        let inputBox = document.getElementById(searchElement);
+        let searchIcon = document.querySelector("#nav-search-icon");
+        if (inputBox.classList.contains("hide-input")) {
+          inputBox.classList.remove("hide-input");
+          searchIcon.classList.add("search-active");
+          inputBox.focus();
+        } else {
+          inputBox.classList.add("hide-input");
+          inputBox.classList.remove("show-input");
+          searchIcon.classList.remove("search-active");
+        }
+      };
+    </script>
+
+</body>
+
+</html>

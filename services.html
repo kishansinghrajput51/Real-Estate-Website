@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Real State Website created by Kishan Rajput" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <!-- Bootstrap CDN for styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+
+  <!-- FontAwesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+  <style>
+    .league-spartan-spartan {
+      font-family: "League Spartan", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+  <style>
+    .formbold-form-input {
+      width: 100%;
+      padding-bottom: 10px;
+      border: none;
+      border-bottom: 1px solid #6a64f1;
+      background: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      color: #07074d;
+      outline: none;
+      resize: none;
+    }
+
+    .formbold-form-input::placeholder {
+      color: #536387;
+    }
+  </style>
+  <title>Service</title>
+</head>
+
+<body>
+  <!-- First part -->
+  <div class="head league-spartan-spartan p-lg-5 p-3">
+    <!-- <header class="  transparent position-relative">
+      <nav class="navbar navbar-expand-lg b-body-tertiary py-4 fs-5 ">
+        <div class="container-fluid space-around d-flex align-items-center">
+          <a class="navbar-brand" href="#"><img src="./assets/images/site-logo.svg" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="show1()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 fw-light">
+              <div class="d-grid grid w-75 justify-content-end gap-4">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./properties.html">
+                    Properties
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./services.html">Services</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <ul class="list-group logos">
+            <div class="d-flex justify-content-between gap-4">
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <input class="form-control me-2 hide-input" id="in" type="search" placeholder="Search"
+                  aria-label="Search" />
+                 <button class="bt" onclick="show1()">
+                <span><i class="fa fa-search"></i></span>
+                 </button> 
+              </li>
+            </div>
+          </ul>
+        </div>
+        <nav class="toogle w-100" id="ink">
+          <div class="container-fluid bc container-fluidw start-0">
+            <div class="toggle-navbar league-spartan-spartan">
+              <ul class="list-group menu-mobile list-style-none bc gap-4 pt-4">
+                <li class="nav-item border-bottom">
+                  <a class="nav-link text-dark b" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item border-bottom">
+                  <a class="nav-link text-dark" href="/about.html">About</a>
+                </li>
+                <li class="nav-item border-bottom">
+                  <a class="nav-link text-dark" href="/services.html" id="navbarDropdown">
+                    Services
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      <div class="d-flex justify-content-center">
+        <div class="w-100 w-md-75 w-md-50 ">
+          <div class="   position-relative top-25">
+            <div class="heading-contact-us mt-5">
+              <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-semibold">
+               Properties
+              </h4>
+            </div>
+            <div class="px-5">
+              <div class="paragraph ms- w-100 ps-2 text-center">
+                <h1 class="heading-2 display-3 text-white text-center ms-1 ps-1 fw-semibold">
+                  We offer a wide Range of Services
+                </h1>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="child-start-search">
+                <div class="button1 btnco rounded-5 py-3 px-4 text-center mx-auto start-search">
+                  <a href="#" class="text-decoration-none w-100 "><span class="text-white"> START SEARCHING</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <header class="service  transparent position-relative">
+      <nav class="navbar navbar-expand-lg b-body-tertiary py-4 fs-5">
+        <div class="container-fluid space-around d-flex align-items-center">
+          <a class="navbar-brand" href="#"><img src="./assets/images/site-logo.svg" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" onclick="show1()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> -->
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 fw-light">
+              <div class="d-grid grid w-75 justify-content-end gap-4">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./properties.html">
+                    Properties
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  " href="./services.html">Services</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <ul class="list-group logos">
+            <div class="d-flex justify-content-between gap-4">
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <li class="icon-list-group-item">
+                <input class="form-control me-2 position-relative hide-input" id="nav-in" type="search"
+                  placeholder="Search" aria-label="Search" />
+                <button class="bt border-0 bg-transparent" onclick="showSearchInputBox('nav-in')">
+                  <span><i class="fa fa-search " id="nav-search-icon"></i></span>
+                </button>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <nav class="toogle w-100" id="ink">
+        <div class="container-fluid bc container-fluidw start-0">
+          <div class="toggle-navbar league-spartan-spartan">
+            <ul class="list-group menu-mobile list-style-none bc gap-4 pt-4">
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark b" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark" href="/about.html">About</a>
+              </li>
+              <li class="nav-item border-bottom">
+                <a class="nav-link text-dark" href="./services.html" id="navbarDropdown">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex justify-content-center" >
+        <!-- <div class="w-100 "> -->
+          <div class="w-sm-100 w-md-75 position-relative top-45 top-lg-25">
+            <div class="heading-contact-us mt-5">
+              <h4 class="home-heading-1 text-center text-white mt-5 pt-5 fw-light">
+                Properties
+              </h4>
+            </div>
+            <div class="px-5">
+              <div class="paragraph  ps-2 text-center">
+                <h1 class="heading-2 display-3 text-white text-center ms-1 ps-1 fw-lighter">
+                  Looking to Buy, Sell, Rent, Invest or Manage?
+                </h1>
+              </div>
+            </div>
+            <!-- <div class="d-flex justify-content-center">
+            <div class="child-start-search">
+              <div class="button1 btnco rounded-5 py-3 px-4 text-center mx-auto start-search">
+                <a href="#" class="text-decoration-none w-100 "><span class="text-white"> START SEARCHING</span></a>
+              </div>
+            </div>
+          </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+
+  <div class="bc container-fluid py-5">
+    <div class="container-xl bg-white p-lg-5 p-md-4 p-2  rounded-3 my-4 height-xl-660 ">
+      <div class="row h-100 mx-1 my-2 py-2 ">
+        <div class=" col-md-6 ">
+          <img src="./assets/images/services-01-1024x554.jpg" class="rounded-2 img-fluid h-100 " alt="..." />
+        </div>
+        <div class=" col-md-6 py-2 d-flex flex-column justify-content-center gap-2 ">
+          <h6>O1</h6>
+          <h3 class="heading-5 fs-2 fw-semibold">
+            Property Sales
+          </h3>
+          <div class="">
+            <div class="hr d-inline-block "></div>
+          </div>
+          <div class="fs-5 text-body text-opacity-100 py-2 ">
+            Looking to buy or sell a property? Look no further. Real Estate offers a wide range of properties for sale,
+            matching you with your dream home or investment. Trust our experienced team to guide you through the entire
+            process.
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-xl bg-white p-lg-5 p-md-4 p-2  rounded-3 my-4 height-xl-660 ">
+      <div class="row h-100 mx-1 my-2 py-2 ">
+        <div class=" col-md-6 py-2 d-flex flex-column justify-content-center gap-2 order-2 order-md-1 ">
+          <h6>O2</h6>
+          <h3 class="heading-5 fs-2 fw-semibold">
+            Property Rentals
+          </h3>
+          <div class="">
+            <div class="hr d-inline-block "></div>
+          </div>
+          <div class="fs-5 text-body text-opacity-100 py-2 ">
+            Finding the perfect rental property can be a challenge. Real Estate makes it easy. Choose from our extensive
+            selection of rental properties, whether you're looking for a cozy apartment or a spacious house. Let us help
+            you find your ideal rental.
+          </div>
+
+        </div>
+        <div class=" col-md-6 col-md-6 order-1">
+          <img src="./assets/images/services-02-1024x554.jpg" class="rounded-2 img-fluid h-100" alt="..." />
+        </div>
+      </div>
+    </div>
+    <div class="container-xl bg-white p-lg-5 p-md-4 p-2  rounded-3 my-4 height-xl-660 d-flex align-content-center ">
+      <div class="row h-100 mx-1 my-2 py-2 ">
+        <div class=" col-md-6 col-md-6">
+          <img src="./assets/images/services-03-1024x554.jpg" class="rounded-2 img-fluid h-100" alt="..." />
+        </div>
+        <div class=" col-md-6 py-2 d-flex flex-column justify-content-center gap-2 ">
+          <h6>O3</h6>
+          <h3 class="heading-5 fs-2 fw-semibold">
+            Property Sales
+          </h3>
+          <div class="">
+            <div class="hr d-inline-block "></div>
+          </div>
+          <div class="fs-5 text-body text-opacity-100 py-2 ">
+            Looking to buy or sell a property? Look no further. Real Estate offers a wide range of properties for sale,
+            matching you with your dream home or investment. Trust our experienced team to guide you through the entire
+            process.
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-xl bg-white rounded-3 my-4 p-2 p-md-3 p-lg-5 height-xl-660 d-flex align-content-center">
+      <div class="row h-100 mx-1 my-2 py-2 ">
+
+        <div class=" col-md-6 py-2 d-flex flex-column justify-content-center gap-2 order-2 order-md-1">
+          <h6>O4</h6>
+          <h3 class="heading-5 fs-2 fw-semibold">
+            Property Rentals
+          </h3>
+          <div class="">
+            <div class="hr d-inline-block "></div>
+          </div>
+          <div class="fs-5 text-body text-opacity-100 py-2 order-1">
+            Looking to buy or sell a property? Look no further. Real Estate offers a wide range of properties for sale,
+            matching you with your dream home or investment. Trust our experienced team to guide you through the entire
+            process.
+          </div>
+
+        </div>
+        <div class=" col-md-6 order-1 order-md-2">
+          <img src="./assets/images/services-04-1024x554.jpg" class="rounded-2 img-fluid h-100" alt="..." />
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container-fluid ">
+    <div class="row  map position-relative w-100 m-md-3 m-lg-5">
+      <div class="text-center form-above-img rounded-3 img-fluid col-12">
+        <div class="container h-75 py-5 rounded-3 ">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+              <form action="https://formbold.com/s/FORM_ID" method="POST" class="p-4 border rounded-3 bg-white">
+                <div class="mb-3">
+                  <div class="label text-start">
+                    <label for="firstname" class="form-label">First Name</label>
+                  </div>
+                  <input type="text" name="firstname" id="firstname" class="y formbold-form-input" placeholder="Jane" />
+                </div>
+                <div class="mb-3">
+                  <div class="label text-start">
+                    <label for="email" class="form-label">Email</label>
+                  </div>
+                  <input type="email" name="lastname" id="lastname" class="y formbold-form-input"
+                    placeholder="example@gmail.com" />
+                </div>
+                <div class="mb-3">
+                  <div class="label text-start">
+                    <label for="message" class="form-label">Message</label>
+                  </div>
+                  <textarea rows="6" name="message" id="message" class="y formbold-form-input"
+                    placeholder="Write your message..."></textarea>
+                </div>
+                <div class="w-50 mx-auto">
+                  <button type="submit" class="btn btnco button1  rounded-pill w-100">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bc pt-5 pb-2 footer-1 ">
+    <div class="d-grider gap-2 gap-md-4 bc h-100 ">
+      <div class="ps-2">
+        <img src="./assets/images/footer-logo.svg " class="" />
+      </div>
+      <div class="">
+        <div class="fw-bold foot-head">About Us</div>
+        <div class="fw-lighter foot-content h-75">
+          At Real Estate, we pride ourselves on being a trusted and reputable
+          name in the real estate industry with years of experience.
+        </div>
+      </div>
+
+      <div class="">
+        <div class="fw-bold foot-head">Contact Us</div>
+
+        <div class="foo fw-lighter foot-content">
+          13,Fifthe Avenue,New York, NY 101660 contact@info.com 555-345-4599
+        </div>
+      </div>
+
+      <div class="pe-2">
+        <div class="d-flex flex-column h-100 justify-content-between">
+          <div>
+            <div class="fw-bold foot-head">Property Search</div>
+            <div class="fw-lighter foot-content">
+              Lorem ipsum dolor sit amet, consectetur elit. Donec faucibus, quam
+              sed
+            </div>
+          </div>
+
+          <div class="form">
+            <form action="" class="form">
+              <input type="text" name="" id="" class="px-2 py-1" placeholder="Search Properties" />
+              <button class="btn  p-1 px-2 rounded-end-pill" style="background-color: var(--bg-co);">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="bc">
+    <hr class="m-0">
+  </div>
+  <div class="py-3 bc px-2 px-md-3 px-lg-5 footer-2">
+    <div class="d-copywright-content d-flex justify-content-between h-100  gap-3">
+      <div class="px-2 py-2 fw-light lead">
+        Real Estate Website @Copyright 2024
+      </div>
+      <div class=" px-2 py-2 ">
+        <ul class="list-group logos">
+          <div class="d-flex justify-content-between gap-4">
+            <li class="icon-list-group-item">
+              <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon-list-group-item">
+              <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon-list-group-item">
+              <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon-list-group-item">
+              <input class="form-control me-2 hide-input" id="in" type="search" placeholder="Search"
+                aria-label="Search" />
+              < <button class="bt" onclick="show1()"> 
+              <a><i class="fa fa-search"></i></a>
+               </button>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+  <div class="container-fluid bc pt-5 pb-2 footer-1 ">
+    <div class="d-grider gap-2 gap-md-4 bc h-100 ">
+      <div class="ps-2">
+        <img src="./assets/images/footer-logo.svg " class="" />
+      </div>
+      <div class="">
+        <div class="fw-lighter foot-head">About Us</div>
+        <div class="fw-lighter foot-content h-75">
+          At Real Estate, we pride ourselves on being a trusted and reputable
+          name in the real estate industry with years of experience.
+        </div>
+      </div>
+
+      <div class="">
+        <div class="fw-lighter foot-head">Contact Us</div>
+
+        <div class="foo fw-lighter foot-content">
+          13,Fifthe Avenue,New York, NY 101660 contact@info.com 555-345-4599
+        </div>
+      </div>
+
+      <div class="pe-2">
+        <div class="d-flex flex-column h-100 justify-content-between">
+          <div>
+            <div class="fw-lighter foot-head">Property Search</div>
+            <div class="fw-lighter foot-content">
+              Lorem ipsum dolor sit amet, consectetur elit. Donec faucibus, quam
+              sed
+            </div>
+          </div>
+
+          <div class="form">
+            <form action="" class="form">
+              <input type="text" name="" id="" class="px-2 py-1" placeholder="Search Properties" />
+              <button class="btn p-1 px-2 rounded-end-pill" style="background-color: var(--bg-co);">
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="bc">
+    <hr class="m-0">
+  </div>
+  <div class="py-3 bc px-4 footer-2">
+    <div class="d-copywright-content d-flex justify-content-between h-100 gap-lg-3 gap-2">
+      <div class="px-2 py-2 fw-light lead">
+        Real Estate Website @Copyright 2024
+      </div>
+      <div class=" px-2 py-2 ">
+        <ul class="list-group footer-social-links">
+          <div class="d-flex justify-content-between gap-4">
+            <li class="icon-list-group-item">
+              <a href="#" class="text-decoration-none"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon-list-group-item">
+              <a href="#" class="text-decoration-none"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li class="icon-list-group-item">
+              <a class="text-decoration-none" href="#"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    // get the location pathname
+    const currentPath = window.location.pathname;
+    switch (currentPath) {
+      case "/index.html":
+        document
+          .querySelector('.nav-link[href="./index.html"]')
+          .classList.add("active");
+        break;
+      case "/about.html":
+        document
+          .querySelector('.nav-link[href="./about.html"]')
+          .classList.add("active");
+        break;
+      case "/properties.html":
+        document
+          .querySelector('.nav-link[href="./properties.html"]')
+          .classList.add("active");
+        break;
+      case "/services.html":
+        document
+          .querySelector('.nav-link[href="./services.html"]')
+          .classList.add("active");
+        break;
+      case "/contact.html":
+        document
+          .querySelector('.nav-link[href="./contact.html"]')
+          .classList.add("active");
+        break;
+      default:
+        break;
+    }
+  </script>
+  <script src="./assets/script.js">
+    let i = document.getElementById("navbarSupportedContent");
+    let j = document.getElementById("ink");
+
+    function show1(e) {
+      if (j.classList.contains("show") && !j.classList.contains("toogle")) {
+        j.classList.add("toogle");
+        j.classList.remove("show");
+      } else {
+        i.classList.remove("show");
+        i.classList.remove("collapsing");
+        i.classList.add("shower");
+        j.classList.remove("toogle");
+        j.classList.toggle("show");
+      }
+    }
+  </script>
+</body>
+
+</html>
